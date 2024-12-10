@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #f44336;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+    --light-text-color: #555;
+    --light-background-color: #f9f9f9;
+    --dark-background-color: #f2f2f2;
+    --border-color: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+h1, h2 {
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--dark-background-color);
+    font-weight: 500;
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-background-color);
+}
+
+tr:hover {
+    background-color: var(--dark-background-color);
+}
+
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.approve-btn, .reject-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.approve-btn {
+    background-color: green; /* Green background for approval */
+    color: white;
+}
+
+.reject-btn {
+    background-color: red; /* Red background for rejection */
+    color: white;
+}
+
+.approve-btn:hover, .reject-btn:hover {
+    transform: scale(1.1);
+}
+
+.approved, .rejected {
+    background-color: #ccc;
+    color: var(--text-color);
+}
+
+.button {
+    display: inline-block;
+    padding: 4px 12px; /* Adjusted padding */
+    background-color: #3498db; /* Lighter background color */
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px; /* Adjusted border radius */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #5da5e8; /* Darker background color on hover */
+  }  
+  
+a1 {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+a1:hover {
+    color: var(--light-text-color);
+}

@@ -1,0 +1,83 @@
+/* dashboard.css */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, black, darkgreen); /* Background gradient from black to dark green */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Light shadow */
+}
+
+h1, p {
+  text-align: center;
+  color: #4CAF50; /* Green */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #666; /* Gray */
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Gray border */
+  background-color: #d0dfe8; /* Blue-gray */
+  color: white; /* White text */
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+input[type="file"] {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #4CAF50; /* Green */
+  color: white; /* White text */
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+.contact-info {
+  background-color: #fff; /* White background */
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}

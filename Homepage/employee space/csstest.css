@@ -1,0 +1,269 @@
+.fixed-container {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header {
+    background-color: skyblue;
+    line-height: 70px;
+    padding-left: 30px;
+    margin-top: 0; /* Added */
+    width: 100%; /* Added */
+}
+
+.logout {
+    float: right;
+    padding-right: 30px;
+}
+
+aside {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 16%;
+    background-color: #424a5b;
+    padding-top: 5%;
+    text-align: center;
+    bottom: 0;
+    overflow: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding-bottom: 30px;
+    font-size: 15px;
+}
+
+ul li a {
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: skyblue;
+}
+
+/* Employee Profile */
+.employee-profile {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 5px;
+    margin-left: 20%; /* Adjusted */
+    margin-top: 0; /* Adjusted */
+    width: 76%; /* Adjusted */
+}
+
+
+.employee-profile h1 {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.employee-profile p {
+    font-size: 18px;
+    color: #555555;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-profile .info-label {
+    font-weight: bold;
+}
+
+.employee-profile .info-value {
+    margin-left: 15px;
+}
+
+.employee-profile .info-item {
+    margin-bottom: 20px;
+}
+
+.employee-profile .profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    display: block;
+    border: 5px solid #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.employee-profile .profile-picture:hover {
+    transform: scale(1.05);
+}
+
+.employee-profile .edit-profile-btn {
+    display: block;
+    width: 120px;
+    margin: 0 auto;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.employee-profile .edit-profile-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Integrated Styles from HTML <style> */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 18%;
+    margin-right: 6%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
+
+.motivation {
+    max-width: 200px; /* Adjust the width as needed */
+    max-height: 100px; /* Limit the height of the cell */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis for text overflow */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.cv-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cv-link:hover {
+    text-decoration: underline;
+}
+
+.actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.actions button.accept {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.actions button.deny {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.actions button:hover {
+    opacity: 0.8;
+}
+
+.leave-request-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.leave-request-form-container form {
+    width: 100%;
+    margin: 0;
+}
+
+.leave-request-form-container input[type="date"],
+.leave-request-form-container select,
+.leave-request-form-container textarea {
+    width: calc(100% - 20px); /* Adjusted width to fit within the form */
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.leave-request-form-container input[type="radio"],
+.leave-request-form-container select {
+    margin-right: 5px;
+}
+
+.leave-request-form-container #duration,
+.leave-request-form-container #reason {
+    height: 100px; /* Set a fixed height for the textarea */
+}
+.demande-button {
+    background-color: #007bff; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.annuler-button {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+/*.leave-request-form-container .demande-button,
+.leave-request-form-container .annuler-button {
+    width: calc(50% - 6px); /* Adjusted width to fit within the form
+    margin: 0;
+}
+*/
